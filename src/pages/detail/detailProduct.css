@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'MetropolisNF', sans-serif;
+}
+
+/* Bread */
+/* .bread {
+  padding-top: 100px;
+} */
+
+/* Detail-Product */
+.detail-product {
+  padding-top: 70px;
+}
+.detail-product .adds img {
+  width: 100%;
+}
+
+.detail-product .details h4 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.detail-product .details p {
+  color: gray;
+}
+.detail-product .details .price {
+  color: gray;
+}
+.detail-product .details .money {
+  color: rgb(190, 0, 0);
+  font-weight: bold;
+  font-size: 40px;
+}
+.detail-product .rating-product {
+  margin-top: -10px;
+  width: 50px;
+}
+
+.detail-product .rating-product .star {
+  padding-top: 5px;
+  display: flex;
+}
+.detail-product .rating-product p {
+  margin-top: 2px;
+  padding-left: 10px;
+}
+.detail-product .color {
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 992px) {
+  .detail-product .cols-two {
+    margin-left: 0;
+  }
+}
+
+.grafik .grafik-progres {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.grafik .grafik-progres img {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.grafik .grafik-progres span {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #9b9b9b;
+  margin-right: 25px;
+  width: 9px;
+}
+
+.progress {
+  width: 120px;
+  height: 5px;
+  margin-right: 25px;
+  background: unset;
+}
+
+.product {
+  margin-top: -55px;
+  margin-left: -7px;
+}

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'MetropolisNF', sans-serif;
+}
+
+.container {
+  width: 500px;
+}
+
+.logo {
+  margin: auto;
+  width: 36px;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.textBlanja {
+  font-weight: 700;
+  font-size: 28px;
+  color: #db3022;
+  padding-top: 10px;
+}
+
+.loginText {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.text {
+  size: 14px;
+  color: #9b9b9b;
+}
+
+.btnSubmit {
+  width: 100%;
+  background: #db3022;
+  border-radius: 25px;
+  color: white;
+  border: 1px solid #db3022;
+}
+
+.btnSubmit:hover {
+  background: white;
+  color: #9b9b9b;
+  border: 1px solid #9b9b9b;
+}
+
+.formControl {
+  height: 48px;
+  border: 1px solid #9b9b9b;
+  filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+  border-radius: 4px;
+}
+
+.link {
+  color: #db3022;
+}
