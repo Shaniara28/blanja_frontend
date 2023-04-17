@@ -54,14 +54,14 @@ Blanja is an e-commerce application where customers can find any products that i
   <summary>
     Login Page
   </summary>
-<img src="screenshot/login.png" alt="login page" />
+<img src="screenshot/login.PNG" alt="login page" />
 </details>
 
 <details>
   <summary>
     Register Page
   </summary>
-<img src="./screenshot/register.png" alt="register page" />
+<img src="./screenshot/register.PNG" alt="register page" />
 </details>
 
 <details>
