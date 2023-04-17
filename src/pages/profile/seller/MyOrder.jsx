@@ -4,18 +4,25 @@ import './myOrder.css';
 import Table from 'react-bootstrap/Table';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import ModalCreate from '../../../components/modal/ModalCreate';
+import ModalEdit from '../../../components/modal/ModalEdit';
+import ModalDelete from '../../../components/modal/ModalDelete';
+import { useDispatch } from 'react-redux';
+import { getProduct } from '../../../redux/action/ProductAction';
 
 const MyOrder = () => {
   const [products, setProducts] = useState([]);
+  const dispatch = useDispatch();
   useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_BACKEND}/products`)
-      .then(function (response) {
-        setProducts(response.data.data);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    dispatch(getProduct(setProducts));
+    // axios
+    //   .get(`${process.env.REACT_APP_BACKEND}/products`)
+    //   .then(function (response) {
+    //     setProducts(response.data.data);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
   }, []);
 
   return (
@@ -141,7 +148,7 @@ const MyOrder = () => {
         </aside>
         <div className="content">
           <div className="content-body">
-            <h3>My Order</h3>
+            <h3>My Product</h3>
             <ul className="detail-order">
               <li className="detail-order-item">
                 <a className="active" href="#">
@@ -166,7 +173,10 @@ const MyOrder = () => {
             </ul>
             <hr />
             <div className="data mt-3">
-              <button className="btn btn-success mt-1 mx-1 mb-2">Add</button>
+              <ModalCreate />
+              {/* <button className="btn btn-success mt-1 mx-1 mb-2" onClick={handleShow}>
+                
+              </button> */}
               <Table striped>
                 <thead>
                   <tr>
@@ -176,6 +186,7 @@ const MyOrder = () => {
                     <th>Stock</th>
                     <th>color</th>
                     <th>size</th>
+                    <th>description</th>
                     <th>Photo</th>
                     <th>Action</th>
                   </tr>
@@ -189,12 +200,26 @@ const MyOrder = () => {
                       <td>{item.stock}</td>
                       <td>{item.color}</td>
                       <td>{item.size}</td>
+                      <td>{item.deskripsi}</td>
                       <td>
                         <img crossOrigin="anonymous" className="" src={item.photo} alt="" width={50} height={55} />
                       </td>
                       <td>
-                        <button className="btn btn-warning mt-1 mx-1">Edit</button>
-                        <button className="btn btn-danger mt-1 mx-1">Delete</button>
+                        {/* <button className="btn btn-warning mt-1 mx-1">Edit</button> */}
+                        <ModalEdit
+                          id={item.id_produk}
+                          name={item.name}
+                          price={item.price}
+                          deskripsi={item.deskripsi}
+                          stock={item.stock}
+                          rating={item.rating}
+                          color={item.color}
+                          size={item.size}
+                          id_category={item.id_category}
+                          id_seller={item.id_seller}
+                        />
+                        {/* <button className="btn btn-danger mt-1 mx-1">Delete</button> */}
+                        <ModalDelete id={item.id_produk} name={item.name} />
                       </td>
                     </tr>
                   ))}

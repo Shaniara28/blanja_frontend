@@ -5,18 +5,38 @@ import Quantity from './PickDetails/Quantity';
 import './detailProduct.css';
 import Button from './PickDetails/Button';
 import Product from '../../components/product/Product';
+import { useParams } from 'react-router-dom';
+import { FormatRupiah } from '@arismun/format-rupiah';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const DetailProduct = () => {
+  const { id } = useParams();
+  const [product, setProduct] = useState([]);
+
+  useEffect(() => {
+    // console.log(id);
+    axios
+      .get(`${process.env.REACT_APP_BACKEND}/products/${id}`)
+      .then((response) => {
+        setProduct(response.data.data[0]);
+        console.log(response.data.data[0]);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <div>
       <section className="detail-product container mt-5">
         <div className="adds">
           <div className="row">
             <div className="image-grid col-xxl-5 col-xl-5 col-md-6 col-lg-5 col-sm-12 col-12">
-              <ImageGrid />
+              <ImageGrid gamb={product.photo} />
             </div>
             <div className="details col-xxl-7 col-xl-7 col-lg-7 col-md-6 col-sm-12 py-xxl-0 py-lg-0 py-md-0 py-5">
-              <h4 className="fw-bold">Baju Muslim Pria</h4>
+              <h4 className="fw-bold">{product.name}</h4>
               <p>Zalora Cloth</p>
               <div className="rating-product mb-4">
                 <div className="star">
@@ -28,7 +48,9 @@ const DetailProduct = () => {
                 </div>
               </div>
               <p className="price">Price</p>
-              <h4 className="money">$ 20.0</h4>
+              <h4 className="money">
+                <FormatRupiah value={product.price} />
+              </h4>
 
               <div className="row color">
                 <Color />

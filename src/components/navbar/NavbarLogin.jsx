@@ -1,6 +1,13 @@
 import style from './navbarLogin.module.css';
+import { useNavigate } from 'react-router-dom';
 
-const NavbarLogin = () => {
+const NavbarLogin = ({ name, onchange, onkeydown }) => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.clear();
+    return navigate('/login-seller');
+  };
   return (
     <>
       <header>
@@ -15,7 +22,7 @@ const NavbarLogin = () => {
             </button>
             <div className="collapse navbar-collapse text-center" id="navbarNav">
               <form className={`${style.searchForm} d-flex ms-auto my-3 search-form`} role="search">
-                <input className={`${style.search} form-control`} type="search" placeholder="  Search" aria-label="Search" />
+                <input className={`${style.search} form-control`} type="text" placeholder="  Search" aria-label="Search" name={name} onChange={onchange} onKeyDown={onkeydown} />
                 <button className={style.searchBtn} type="submit">
                   <i className="bi bi-search" />
                 </button>
@@ -45,6 +52,9 @@ const NavbarLogin = () => {
                   </a>
                 </li>
               </ul>
+              <button className={`${style.login} btn`} type="button" onClick={handleLogout}>
+                Logout
+              </button>
             </div>
           </div>
         </nav>

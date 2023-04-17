@@ -1,70 +1,191 @@
-# Getting Started with Create React App
+<br />
+<p align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">Blanja Application</h3>
+  <p align="center">
+    <image align="center" width="200" src='/src/assets/img/Vector.png' />
+  </p>
+  <p align="center">
+    <a href="#">View Demo</a>
+  </p>
+</p>
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [About the Project](#about-the-project)
+  - [Project Structure](#project-structure)
+  - [Screenshots](#screenshots)
+  - [Package Modules](#package-modules)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Contributing](#contributing)
+- [Related Project](#related-project)
+- [Contact](#contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- ABOUT THE PROJECT -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About The Project
 
-### `npm test`
+Blanja is an e-commerce application where customers can find any products that is being posted by sellers and then make an order. There are 2 types of user in this application: Customer and Seller. Customers can find and buy any products, and then proceed to payment to complete the purchase. Sellers are able to see orders from customers that are buying their product and see the payment status. Sellers might also post their product from their profile and edit the products.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Project Structure
 
-### `npm run build`
+```
+|── BlanjaApp
+   |── public          # Public Assets
+   |── screenshot      # Screenshots of the application
+   |── src             # Project source code
+       |── assets      # Application assets
+       |── components  # Application components
+       |── config      # Router endpoint
+       |── pages       # Pages source code
+       |── redux       # State management
+   |── .env            # Environment variables
+   |── .gitignore      # Files that should be ignored
+   |── README.md       # Readme
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<details>
+  <summary>
+    Login Page
+  </summary>
+<img src="./screenshot/login.png" alt="login page" />
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+  <summary>
+    Register Page
+  </summary>
+<img src="./screenshot/register.png" alt="register page" />
+</details>
 
-### `npm run eject`
+<details>
+  <summary>
+    Forgot Password Page
+  </summary>
+<img src="./screenshot/forgot.png" alt="forgot password page" />
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+  <summary>
+    Landing Page
+  </summary>
+<img src="./screenshot/landing.png" alt="landing page" />
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<details>
+  <summary>
+    Product Detail Page
+  </summary>
+<img src="./screenshot/detail.png" alt="product detail page" />
+</details>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<details>
+  <summary>
+    MyBag Page
+  </summary>
+<img src="./screenshot/mybag.png" alt="mybag page" />
+</details>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<details>
+  <summary>
+    Checkout Page
+  </summary>
+<img src="./screenshot/checkout.png" alt="checkout page" />
+</details>
 
-## Learn More
+<details>
+  <summary>
+    Seller MyProduct
+  </summary>
+<img src="./screenshot/myproduct.png" alt="myproduct" />
+</details>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<details>
+  <summary>
+    Seller Edit Product
+  </summary>
+<img src="./screenshot/editproduct.png" alt="update product" />
+</details>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<details>
+  <summary>
+    Seller Insert Product
+  </summary>
+<img src="./screenshot/addproduct.png" alt="add product" />
+</details>
 
-### Code Splitting
+### Package Modules
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Below are lists of modules used in this application:
 
-### Analyzing the Bundle Size
+- [React JS](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Axios](https://axios-http.com/)
+- [Dotenv](https://www.npmjs.com/package/dotenv)
+- [SweetAlert2](https://sweetalert2.github.io/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- GETTING STARTED -->
 
-### Making a Progressive Web App
+## Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Prerequisites
 
-### Advanced Configuration
+This is an example of things you need to use the application and how to install them.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [node.js](https://nodejs.org/en/download/)
 
-### Deployment
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Clone the repo
 
-### `npm run build` fails to minify
+```sh
+git clone https://github.com/Shaniara28/blanja_frontend
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Install NPM packages
+
+```sh
+npm install
+```
+
+3. Add .env file at your frontend root folder project, and add the following
+
+```sh
+REACT_APP_BACKEND_URL = your_api_url
+
+```
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b your/branch`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/yourbranch`)
+5. Open a Pull Request
+
+<!-- Related Project -->
+
+## Related Project
+
+:rocket: [`Backend`](https://github.com/Shaniara28/Intermediate-Backend)
+
+:rocket: [`Frontend`](https://github.com/Shaniara28/blanja_frontend)
+
+:rocket: [`Demo`]()
+
+<!-- CONTACT -->
+
+## Contact
+
+My Email : saniarizkiagustin@gmail.com

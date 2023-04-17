@@ -4,7 +4,7 @@ import style from './style.module.css';
 const Category = (props) => {
   return (
     <>
-      <section className="container category mt-5">
+      <section className="container category">
         <div className="category">
           <div className="text-category">
             <h1 className={style.titleText}>Category</h1>
