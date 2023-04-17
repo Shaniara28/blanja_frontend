@@ -54,7 +54,7 @@ Blanja is an e-commerce application where customers can find any products that i
   <summary>
     Login Page
   </summary>
-<img src="screenshot/login.PNG" alt="login page" />
+<img src="./screenshot/login.PNG" alt="login page" />
 </details>
 
 <details>
@@ -68,56 +68,56 @@ Blanja is an e-commerce application where customers can find any products that i
   <summary>
     Forgot Password Page
   </summary>
-<img src="./screenshot/forgot.png" alt="forgot password page" />
+<img src="./screenshot/forgot.PNG" alt="forgot password page" />
 </details>
 
 <details>
   <summary>
     Landing Page
   </summary>
-<img src="./screenshot/landing.png" alt="landing page" />
+<img src="./screenshot/landing.PNG" alt="landing page" />
 </details>
 
 <details>
   <summary>
     Product Detail Page
   </summary>
-<img src="./screenshot/detail.png" alt="product detail page" />
+<img src="./screenshot/detail.PNG" alt="product detail page" />
 </details>
 
 <details>
   <summary>
     MyBag Page
   </summary>
-<img src="./screenshot/mybag.png" alt="mybag page" />
+<img src="./screenshot/mybag.PNG" alt="mybag page" />
 </details>
 
 <details>
   <summary>
     Checkout Page
   </summary>
-<img src="./screenshot/checkout.png" alt="checkout page" />
+<img src="./screenshot/checkout.PNG" alt="checkout page" />
 </details>
 
 <details>
   <summary>
     Seller MyProduct
   </summary>
-<img src="./screenshot/myproduct.png" alt="myproduct" />
+<img src="./screenshot/myproduct.PNG" alt="myproduct" />
 </details>
 
 <details>
   <summary>
     Seller Edit Product
   </summary>
-<img src="./screenshot/editproduct.png" alt="update product" />
+<img src="./screenshot/editproduct.PNG" alt="update product" />
 </details>
 
 <details>
   <summary>
     Seller Insert Product
   </summary>
-<img src="./screenshot/addproduct.png" alt="add product" />
+<img src="./screenshot/addproduct.PNG" alt="add product" />
 </details>
 
 ### Package Modules
