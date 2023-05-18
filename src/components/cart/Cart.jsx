@@ -38,11 +38,11 @@ const Cart = () => {
                       <input style={{ width: '16px' }} className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
                       <label className="form-check-label ms-2" for="defaultCheck1">
                         <div style={{ padding: '12px' }}>
-                          <img style={{ borderRadius: '10px' }} src={require('../../assets/img/jas.png')} alt="" />
+                          <img style={{ borderRadius: '10px', width: '230px' }} src={require('../../assets/img/jas.png')} alt="" />
                         </div>
                       </label>
                       <div className="name">
-                        Men's formal suit - Black
+                        Women's formal suit - Black
                         <br />
                         <span style={{ fontSize: '13px', color: 'gray' }}>Zalora Cloth</span>
                       </div>
@@ -50,11 +50,11 @@ const Cart = () => {
                   </div>
                   <div className="col-3 col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3  ms-auto text-end d-flex justify-content-around align-items-center">
                     <button style={{ width: '35px', height: '35px', backgroundColor: 'antiquewhite', borderRadius: '100%', border: 'none' }}>-</button>
-                    <p style={{ paddingTop: '15px' }}>2</p>
+                    <p style={{ paddingTop: '15px' }}>1</p>
                     <button style={{ width: '35px', height: '35px', backgroundColor: 'antiquewhite', borderRadius: '100%', border: 'none' }}>+</button>
                   </div>
                   <div className="col-1 col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1  ms-auto text-end">
-                    <h5 style={{ color: 'red', fontWeight: '700', paddingRight: '10px' }}>$ 20.0</h5>
+                    <h5 style={{ color: 'red', fontWeight: '700', paddingRight: '10px' }}>Rp 100.000</h5>
                   </div>
                 </div>
               </div>
@@ -65,7 +65,7 @@ const Cart = () => {
                       <input style={{ width: '16px' }} className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
                       <label className="form-check-label ms-2" for="defaultCheck1">
                         <div style={{ padding: '12px' }}>
-                          <img style={{ borderRadius: '10px' }} src={require('../../assets/img/jas.png')} alt="" />
+                          <img style={{ borderRadius: '10px', width: '230px' }} src={require('../../assets/img/jas.png')} alt="" />
                         </div>
                       </label>
                       <div className="name">
@@ -77,11 +77,11 @@ const Cart = () => {
                   </div>
                   <div className="col-3 col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3  ms-auto text-end d-flex justify-content-around align-items-center">
                     <button style={{ width: '35px', height: '35px', backgroundColor: 'antiquewhite', borderRadius: '100%', border: 'none' }}>-</button>
-                    <p style={{ paddingTop: '15px' }}>2</p>
+                    <p style={{ paddingTop: '15px' }}>1</p>
                     <button style={{ width: '35px', height: '35px', backgroundColor: 'antiquewhite', borderRadius: '100%', border: 'none' }}>+</button>
                   </div>
                   <div className="col-1 col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1  ms-auto text-end">
-                    <h5 style={{ color: 'red', fontWeight: '700', paddingRight: '10px' }}>$ 20.0</h5>
+                    <h5 style={{ color: 'red', fontWeight: '700', paddingRight: '10px' }}>Rp 150.000</h5>
                   </div>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const Cart = () => {
                     <h5>Shopping summary</h5>
                     <div className={`${style.price}`}>
                       <p>Total Price</p>
-                      <p className={`${style.money}`}>$40.5</p>
+                      <p className={`${style.money}`}>Rp 250.000</p>
                     </div>
                     <div className={`${style.btnBuy} d-grid mx-2`}>
                       <Link clasName="btn" to="/Checkout">

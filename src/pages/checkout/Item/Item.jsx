@@ -10,13 +10,13 @@ const Item = () => {
               <img style={{ borderRadius: '10px' }} src={require('../../../assets/img/jas.png')} alt="" />
             </div>
             <div className="name">
-              Men's formal suit - Black
+              Women's formal suit - Black
               <br />
               <span style={{ fontSize: '13px', color: 'gray' }}>Zalora Cloth</span>
             </div>
           </div>
           <div className="col-1 col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1  ms-auto text-end">
-            <h5 style={{ color: 'red', fontWeight: '700', paddingRight: '10px' }}>$ 20.0</h5>
+            <h5 style={{ color: 'red', fontWeight: '700', paddingRight: '10px' }}>Rp 100.000</h5>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Item = () => {
             </div>
           </div>
           <div className="col-1 col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1  ms-auto text-end">
-            <h5 style={{ color: 'red', fontWeight: '700', paddingRight: '10px' }}>$ 20.0</h5>
+            <h5 style={{ color: 'red', fontWeight: '700', paddingRight: '10px' }}>Rp 150.000</h5>
           </div>
         </div>
       </div>
