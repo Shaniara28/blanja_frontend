@@ -9,7 +9,7 @@ import axios from 'axios';
 const RegisterSeller = () => {
   const navigate = useNavigate();
   const [data, setData] = useState({
-    name: '',
+    fullname: '',
     email: '',
     phone: '',
     password: '',
