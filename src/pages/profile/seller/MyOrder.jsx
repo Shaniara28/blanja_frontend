@@ -4,6 +4,7 @@ import './myOrder.css';
 import Table from 'react-bootstrap/Table';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { FormatRupiah } from '@arismun/format-rupiah';
 import ModalCreate from '../../../components/modal/ModalCreate';
 import ModalEdit from '../../../components/modal/ModalEdit';
 import ModalDelete from '../../../components/modal/ModalDelete';
@@ -196,7 +197,9 @@ const MyOrder = () => {
                     <tr key={item.id}>
                       <td>{index + 1}</td>
                       <td>{item.name}</td>
-                      <td>{item.price}</td>
+                      <td>
+                        <FormatRupiah value={item.price} />
+                      </td>
                       <td>{item.stock}</td>
                       <td>{item.color}</td>
                       <td>{item.size}</td>
